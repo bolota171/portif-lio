@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Luis Guilherme</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+button {
+    color: white;
+    background-color: #FF8C00;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px rgba(255, 140, 0, 0.7);
+    transform: scale(1.05);
+}
+
+header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: rgba(255, 140, 0, 0.8);
+}
+
+section#inicio {
+    text-align: center;
+    padding: 60px 0;
+}
+
+section#inicio .intro {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section.habilidades {
+    padding: 60px 0;
+}
+
+.habilidades-box {
+    padding: 30px;
+    border: 2px solid #FF8C00;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.habilidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #FF8C00;
+}
+
+.habilidades-box h3 {
+    margin-bottom: 15px;
+    color: #FF8C00;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid #555;
+    margin-top: 50px;
+}
+form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    input, textarea {
+        padding: 10px;
+        border: 2px solid #555;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #FF8C00;
+        box-shadow: 0 0 5px rgba(255, 140, 0, 0.7);
+        outline: none;
+    }
+
+    textarea {
+        resize: vertical; /* Permite redimensionar apenas verticalmente */
+        min-height: 100px; /* Altura mínima */
+    }
+    </style>
+</head>
+<body>
+<header>
+    <div class="interface">
+        <h1>Portfólio de Luis Guilherme</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<section id="inicio">
+    <div class="interface intro">
+        
+        <h2>Bem-vindo ao meu Portfólio<span>.</span></h2>
+        <img src="img/imagem_portifólio.jpg" alt="Foto do dev">
+        <p>Olá! Meu nome é Luis Guilherme Lemos Barbosa. Tenho 18 anos e sou estudante de Ciências da Computação com habilidades em C, Python e desenvolvimento web. Estou sempre em busca de novos desafios e de expandir meus conhecimentos para desenvolver soluções inovadoras que impactem positivamente o mundo da tecnologia.</p>
+        <a href="#contato"><button>Entre em Contato</button></a>
+    </div>
+</section>
+
+<section class="habilidades" id="habilidades">
+    <div class="interface">
+        <h2>Minhas <span>Habilidades</span></h2>
+        <div class="flex">
+            <div class="habilidades-box">
+                <h3>Linguagem C</h3>
+                <p>Proficiência na linguagem C, com experiência em criação de estruturas de dados e resolução de problemas complexos. Tenho conhecimento sólido na construção de algoritmos eficientes e compreendo profundamente conceitos fundamentais da computação.</p>
+            </div>
+            <div class="habilidades-box">
+                <h3>Python</h3>
+                <p>Conhecimento em Python voltado para desenvolvimento de scripts, automação e análise de dados. Minha experiência com bibliotecas como Pandas e NumPy me ajuda a manipular e analisar grandes volumes de dados, além de facilitar o desenvolvimento de ferramentas práticas e funcionais.</p>
+            </div>
+            <div class="habilidades-box">
+                <h3>Desenvolvimento Web</h3>
+                <p>Experiência em desenvolvimento front-end utilizando HTML, CSS e JavaScript para criar interfaces responsivas e dinâmicas. Estou constantemente aprimorando minhas habilidades e explorando frameworks e tecnologias modernas para oferecer a melhor experiência ao usuário.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sobre">
+    <div class="interface">
+        <h2>Sobre Mim</h2>
+        <p>Desde jovem, sempre fui fascinado pela tecnologia e pela possibilidade de criar algo do zero. Em minha jornada na faculdade de Ciências da Computação, descobri o poder transformador da programação e a capacidade de resolver problemas complexos. Estou continuamente aprendendo e me aperfeiçoando em áreas como desenvolvimento de software e ciência de dados, e tenho um grande interesse em segurança da informação e IA.</p>
+        <p>Além das minhas habilidades técnicas, tenho grande dedicação e compromisso com meus projetos. Acredito na importância de desenvolver habilidades práticas e na capacidade de adaptação a novos desafios. Estou sempre aberto a aprender novas tecnologias e a colaborar em projetos que me desafiem a crescer.</p>
+    </div>
+</section>
+<section id="contato">
+    <div class="interface">
+        <h2>Fale Comigo</h2>
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Seu nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Seu email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Sua mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="interface">
+        <p>&copy; 2024 Luis Guilherme</p>
+        <p><a href="mailto:lemosluisguilherme3@gmail.com">lemosluisguilherme3@gmail.com</a>
+    </div>
+</footer>
+</body>
+</html>
